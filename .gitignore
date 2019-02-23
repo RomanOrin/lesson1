@@ -1,3 +1,4 @@
 *.рус
 __pycache__
 *.log
+key.py

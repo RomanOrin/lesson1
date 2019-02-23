@@ -1,6 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 PROXY = {'proxy_url': 'socks5://t2.learn.python.ru:1080', 'urllib3_proxy_kwargs': {'username': 'learn', 'password': 'python'}}
 import logging
+improt API_KEY from key
 logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
 level=logging.INFO,
 filename='bot.log'
@@ -18,7 +19,7 @@ def talk_to_me(bot, update):
     update.message.reply_text(user_text)
 
 def main():
-    mybot = Updater("709240531:AAFV5RRl47XD3S3ktPXmF2Oh_oJqmT9QiDE", request_kwargs=PROXY)
+    mybot = Updater(API_KEY, request_kwargs=PROXY)
 
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
