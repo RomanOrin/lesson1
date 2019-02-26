@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 PROXY = {'proxy_url': 'socks5://t2.learn.python.ru:1080', 'urllib3_proxy_kwargs': {'username': 'learn', 'password': 'python'}}
 import logging
-improt API_KEY from key
+from key import API_KEY
 logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
 level=logging.INFO,
 filename='bot.log'
