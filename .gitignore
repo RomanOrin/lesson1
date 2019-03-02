@@ -1,4 +1,4 @@
 *.рус
 __pycache__
 *.log
-key.py
+api_key.py
